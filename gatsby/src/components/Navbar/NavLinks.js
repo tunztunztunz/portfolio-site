@@ -53,7 +53,7 @@ const Nav = ({ navbarOpen, setNavbarOpen }) => {
   };
   return (
     <Wrapper>
-      <AnchorLink href="#about" offset="25" onClick={() => toggleNav()}>
+      <AnchorLink href="#about" offset="0" onClick={() => toggleNav()}>
         About
       </AnchorLink>
       <AnchorLink href="#projects" offset="25" onClick={() => toggleNav()}>

@@ -10,10 +10,6 @@ const GlobalStyles = createGlobalStyle`
     --rose: #A05C7B;
     //--black: #181818;
   }
-  .gatsby-image-wrapper img[src*=base64\\,] {
-    image-rendering: -moz-crisp-edges;
-    image-rendering: pixelated;
-  }
   html {
     height: 100%;
     color: var(--black);
@@ -31,6 +27,10 @@ const GlobalStyles = createGlobalStyle`
   }
   img {
     max-width: 100%;
+  }
+    .gatsby-image-wrapper img[src*=base64\\,] {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
   }
 `;
 

@@ -7,11 +7,11 @@ import gentiumBookBasicBold from '../assets/fonts/Gentium_Book_Basic/GentiumBook
 
 const Typography = createGlobalStyle`
   @font-face {
-    font-family: gentiumBookBasic;
-    src: url(${gentiumBookBasic});
+    font-family: openSans;
+    src: url(${openSans});
   }
   html {
-    font-family: FrenchFries, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: openSans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--black);
   }
   p {
@@ -28,7 +28,7 @@ const Typography = createGlobalStyle`
     color: var(--black);
     text-decoration-color: var(--red);
     /* Chrome renders this weird with this font, so we turn it off */
-    text-decoration-skip-ink: none;
+    //text-decoration-skip-ink: none;
   }
   .mark {
     color: var(--rose);
@@ -40,7 +40,8 @@ const Typography = createGlobalStyle`
     transform: rotate(-2deg);
   }
    .header {
-    text-decoration: underline;
+    font-size: 3rem;
+    letter-spacing: 0.5px;
   }
 `;
 

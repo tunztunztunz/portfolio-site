@@ -16,7 +16,6 @@ const LandingStyles = styled.div`
     letter-spacing: 0.25rem;
   }
 
-  
   .cursor {
     color: var(--white);
   }
@@ -24,7 +23,6 @@ const LandingStyles = styled.div`
 
 const Landing = ({ person }) => (
   <LandingStyles>
-
     <div />
   </LandingStyles>
 );

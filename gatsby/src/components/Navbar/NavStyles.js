@@ -48,14 +48,17 @@ export const Navbox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: start;
+  a {
+    margin-left: 3rem;
+  }
   height: 100%;
   @media (max-width: 800px) {
     position: fixed;
     width: 100%;
     justify-content: flex-start;
-    margin-top: 4rem;
     padding-top: 10vh;
+    //padding-left: 5rem;
     background-color: var(--white);
     transition: all 0.3s ease-in;
     top: 8vh;

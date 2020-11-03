@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
-import ReverseString from '../../utils/reverseString';
+import Reverse from '../common/Reverse';
+import { Button } from '../common/Button'
 
 const HeaderStyles = styled.section`
   text-align: center;
@@ -34,6 +35,7 @@ const SingleProjectStyles = styled.div`
   p {
     //font-size: 1.25rem;
     padding: 0 8%;
+    margin-bottom: 0;
     text-align: center;
     @media (min-width: 900px) {
       text-align: left;
@@ -46,12 +48,29 @@ const SingleProjectStyles = styled.div`
     display: inline-block;
     top: 0;
   }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    Button {
+      margin: 0 1rem;
+    }
+    @media(min-width: 900px) {
+      justify-content: start;
+    }
+  }
+  .img-div {
+    display: flex;
+    flex-direction: column;
+  }
   .technology {
+    margin-top: 0.5rem;
+    align-self: center;
     align-items: end;
     color: var(--rose);
     text-transform: uppercase;
     font-size: 0.8rem;
   }
+
   .gatsby-image-wrapper {
     margin-top: 0.3rem;
     width: 100%;
@@ -65,18 +84,22 @@ const SingleProjectStyles = styled.div`
 
 const SingleProject = ({ project }) => (
   <SingleProjectStyles>
-    <Img fluid={project.image.asset.fluid} alt={project.name} />
+    <div className="img-div">
+      <Img fluid={project.image.asset.fluid} alt={project.name} />
+      <span className="technology">
+        react, graphql, styled components, gatsby
+      </span>
+    </div>
     <div className="project-information">
       <h2>
         <span>{project.name}</span>
       </h2>
       <p>{project.description}</p>
-      <span className="technology">
-        react, graphql, styled components, gatsby
-      </span>
       <br />
-      <button>Live</button>
-      <button>Code</button>
+      <div className="buttons">
+        <Button>Live</Button>
+        <Button>Code</Button>
+      </div>
     </div>
   </SingleProjectStyles>
 );
@@ -86,19 +109,10 @@ const Projects = ({ projects }) => {
   return (
     <section id="projects">
       <HeaderStyles>
-        <h1 className="mark underline">Projects</h1>
-        <h3>
-          Some of my{' '}
-          <span
-            className="mark"
-            onFocus={ReverseString}
-            onBlur={ReverseString}
-            onMouseEnter={ReverseString}
-            onMouseLeave={ReverseString}
-          >
-            work
-          </span>
-        </h3>
+        <h1 className="header">Projects</h1>
+        <p>
+          Here are some <Reverse>projects</Reverse> I've been working on
+        </p>
       </HeaderStyles>
       <ProjectsGrid>
         {projects.map((project) => (
