@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "z135q00r",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "dustin-simensen-portfolio"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/google-maps-input"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
