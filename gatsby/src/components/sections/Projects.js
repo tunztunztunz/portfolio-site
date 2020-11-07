@@ -30,6 +30,9 @@ const SingleProjectStyles = styled.div`
   gap: 2rem;
   justify-items: center;
   text-align: center;
+  a {
+    text-decoration: none;
+  }
   @media (min-width: 900px) {
     justify-items: center;
     text-align: left;
@@ -90,7 +93,9 @@ const SingleProject = ({ project }) => (
     <div className="img-div">
       <Img fluid={project.image.asset.fluid} alt={project.name} />
       <span className="technology">
-        react, graphql, styled components, gatsby
+        {project.technology.map((project) => (
+          <span>{project}, </span>
+        ))}
       </span>
     </div>
     <div className="project-information">
@@ -100,8 +105,16 @@ const SingleProject = ({ project }) => (
       <p>{project.description}</p>
       <br />
       <div className="buttons">
-        <Button>Live</Button>
-        <Button>Code</Button>
+        <Button>
+          <a href={project.liveLink} target="_blank">
+            Live
+          </a>
+        </Button>
+        <Button>
+          <a href={project.githubLink} target="_blank">
+            Github
+          </a>
+        </Button>
       </div>
     </div>
   </SingleProjectStyles>
@@ -116,10 +129,7 @@ const Projects = ({ projects }) => {
         <p>
           Here are some{' '}
           <Reverse>
-            <a
-              href={githubLink}
-              className="mark"
-            >
+            <a href={githubLink} className="mark">
               projects
             </a>
           </Reverse>{' '}

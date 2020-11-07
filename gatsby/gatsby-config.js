@@ -6,7 +6,7 @@ export default {
   pathPrefix: '/portfolio',
   siteMetadata: {
     title: `Dustin Simensen`,
-    siteUrl: 'https://www.dustinsimensen.com',
+    siteUrl: 'https://nifty-austin-dc1597.netlify.app/',
     description: 'Web development portfolio for Dustin Simensen',
   },
   plugins: [

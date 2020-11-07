@@ -28,6 +28,25 @@ export default {
       description: 'Describe what you did on the project',
     },
     {
+      name: 'githubLink',
+      title: 'Github Link',
+      type: 'string',
+      description: "Link to the project's github repo",
+    },
+    {
+      name: 'liveLink',
+      title: 'Live Link',
+      type: 'string',
+      description: 'Link to the project live on the internet',
+    },
+    {
+      name: 'technology',
+      title: 'Technology',
+      type: 'array',
+      of: [{ type: 'string' }],
+      validation: (Rule) => Rule.unique(),
+    },
+    {
       name: 'image',
       title: 'Image',
       type: 'image',

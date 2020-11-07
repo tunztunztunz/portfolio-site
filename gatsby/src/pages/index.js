@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Projects from '../components/sections/Projects';
 import AboutMe from '../components/sections/AboutMe';
 import Contact from '../components/sections/Contact';
+import SEO from '../components/SEO';
 
 const HomepageStyles = styled.div`
   display: grid;
@@ -15,11 +16,14 @@ const Homepage = ({ data }) => {
   const person = data.person.nodes[0];
   const projects = data.projects.nodes;
   return (
-    <HomepageStyles>
-      <AboutMe person={person} />
-      <Projects projects={projects} />
-      <Contact />
-    </HomepageStyles>
+    <>
+      <SEO title="Dustin Simensen" />
+      <HomepageStyles>
+        <AboutMe person={person} />
+        <Projects projects={projects} />
+        <Contact />
+      </HomepageStyles>
+    </>
   );
 };
 
@@ -57,6 +61,9 @@ export const query = graphql`
             }
           }
         }
+        githubLink
+        liveLink
+        technology
       }
     }
   }

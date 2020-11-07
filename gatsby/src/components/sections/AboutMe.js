@@ -29,7 +29,7 @@ const AboutMeStyles = styled.div`
     margin-bottom: 5rem;
     align-self: start;
     width: 50%;
-    max-height: 400px;
+    min-height: 250px;
   }
 `;
 
