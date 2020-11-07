@@ -47,8 +47,6 @@ const Form = styled.form`
 `;
 
 const Contact = () => {
-  const [hasSubmitted, setHasSubmitted] = useState(false);
-  const show = localStorage.submitted;
   return (
     <section id="contact">
       <Form

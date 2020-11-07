@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterStyles = styled.div`
-  padding: 0;
+  padding: 0 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,7 +12,7 @@ const FooterStyles = styled.div`
 const Footer = () => {
   return (
     <FooterStyles>
-      <p>&copy; Dustin Simensen {new Date().getFullYear()}</p>
+      <p>Dustin Simensen</p>
     </FooterStyles>
   );
 };
