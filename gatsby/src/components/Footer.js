@@ -9,12 +9,6 @@ const FooterStyles = styled.div`
   //border-top: 1px solid var(--grey);
 `;
 
-const Footer = () => {
-  return (
-    <FooterStyles>
-      <p>Dustin Simensen</p>
-    </FooterStyles>
-  );
-};
+const Footer = () => <FooterStyles />;
 
 export default Footer;
