@@ -1,43 +1,12 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
 import Img from 'gatsby-image';
-import reverseString from '../../utils/reverseString';
-import Reverse from '../common/Reverse';
-
-const AboutMeStyles = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  justify-items: center;
-  text-align: center;
-  margin-top: 5rem;
-  a {
-    text-decoration: none;
-  }
-  .technologies {
-    word-spacing: 0.25rem;
-    font-size: 3rem;
-    text-transform: uppercase;
-  }
-  .about-grid {
-    display: grid;
-    grid-template-rows: auto;
-    gap: 0.5rem;
-  }
-  .gatsby-image-wrapper {
-    margin-bottom: 5rem;
-    align-self: start;
-    width: 50%;
-    min-height: 250px;
-  }
-`;
+import Reverse from '../../common/Reverse';
+import AboutMeStyles from './AboutMeStyles';
 
 const AboutMe = ({ person }) => {
   const githubLink = 'https://github.com/tunztunztunz';
   const bandLink = 'https://raincult.bandcamp.com/album/neon-rodeo';
 
-  const reverse = reverseString;
   return (
     <section id="about">
       <AboutMeStyles>

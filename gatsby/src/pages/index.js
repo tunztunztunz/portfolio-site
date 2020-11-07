@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
-import Projects from '../components/sections/Projects';
-import AboutMe from '../components/sections/AboutMe';
-import Contact from '../components/sections/Contact';
+import Projects from '../components/sections/Projects/Projects';
+import AboutMe from '../components/sections/AboutMe/AboutMe';
+import Contact from '../components/sections/Contact/Contact';
 import SEO from '../components/SEO';
 
 const HomepageStyles = styled.div`
