@@ -79,8 +79,8 @@ const SingleProjectStyles = styled.div`
 
   .gatsby-image-wrapper {
     margin-top: 0.3rem;
-    width: 100%;
-    //max-width: 600px;
+    min-width: 600px;
+    max-height: 600px;
     @media (min-width: 900px) {
       width: 400px;
       max-height: 269px;
