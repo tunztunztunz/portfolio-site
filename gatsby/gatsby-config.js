@@ -3,7 +3,6 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '.env' });
 
 export default {
-  pathPrefix: '/portfolio',
   siteMetadata: {
     title: `Dustin Simensen`,
     siteUrl: 'https://nifty-austin-dc1597.netlify.app/',

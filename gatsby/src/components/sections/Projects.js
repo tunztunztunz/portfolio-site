@@ -79,8 +79,8 @@ const SingleProjectStyles = styled.div`
 
   .gatsby-image-wrapper {
     margin-top: 0.3rem;
-    min-width: 600px;
-    max-height: 600px;
+    min-width: 320px;
+    height: 100%;
     @media (min-width: 900px) {
       width: 400px;
       max-height: 269px;
@@ -133,7 +133,7 @@ const Projects = ({ projects }) => {
               projects
             </a>
           </Reverse>{' '}
-          I've been working on
+          I've worked on
         </p>
       </HeaderStyles>
       <ProjectsGrid>

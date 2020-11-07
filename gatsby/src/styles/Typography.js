@@ -40,6 +40,7 @@ const Typography = createGlobalStyle`
     font-size: 3rem;
     letter-spacing: 0.5px;
   }
+  
 `;
 
 export default Typography;

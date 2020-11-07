@@ -55,13 +55,13 @@ const AboutMe = ({ person }) => {
             <span className="mark">Express.js</span>, and various CSS
             frameworks, such as <span className="mark">Styled Components</span>{' '}
             and <span className="mark">Bootstrap</span>. When I'm not coding, I
-            enjoy{' '}
+            sling guitar riffs{' '}
             <Reverse>
-              <a href={bandLink} className="mark">
-                playing in bands
+              <a href={bandLink} target="_blank" className="mark">
+                bands
               </a>
             </Reverse>{' '}
-            and <Reverse>writing</Reverse>. The current stack of
+            and enjoy <Reverse>writing</Reverse>. The current stack of
             languages/technologies I'm familiar with:
           </p>
           <Reverse className="mark technologies">
