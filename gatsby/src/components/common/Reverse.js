@@ -6,7 +6,6 @@ const Reverse = ({ children }) => (
     className="mark"
     onFocus={ReverseString}
     onBlur={ReverseString}
-    onMouseEnter={ReverseString}
     onMouseLeave={ReverseString}
   >
     {children}

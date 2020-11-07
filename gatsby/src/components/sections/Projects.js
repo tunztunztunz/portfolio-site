@@ -93,8 +93,8 @@ const SingleProject = ({ project }) => (
     <div className="img-div">
       <Img fluid={project.image.asset.fluid} alt={project.name} />
       <span className="technology">
-        {project.technology.map((project) => (
-          <span>{project}, </span>
+        {project.technology.map((p, i) => (
+          <span key={i}>{p}, </span>
         ))}
       </span>
     </div>
