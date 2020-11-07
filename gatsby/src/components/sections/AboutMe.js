@@ -55,7 +55,7 @@ const AboutMe = ({ person }) => {
             <span className="mark">Express.js</span>, and various CSS
             frameworks, such as <span className="mark">Styled Components</span>{' '}
             and <span className="mark">Bootstrap</span>. When I'm not coding, I
-            sling guitar riffs{' '}
+            sling guitar riffs in{' '}
             <Reverse>
               <a href={bandLink} target="_blank" className="mark">
                 bands
