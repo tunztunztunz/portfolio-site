@@ -5,7 +5,6 @@ import { Hamburger, Name, Navbox, Toggle, Wrapper } from './NavStyles';
 
 const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  console.log(navbarOpen);
   return (
     <Wrapper>
       <Name as={Link} to="/">

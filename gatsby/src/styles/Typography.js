@@ -36,9 +36,6 @@ const Typography = createGlobalStyle`
   .center {
     text-align: center;
   }
-  .tilt {
-    transform: rotate(-2deg);
-  }
    .header {
     font-size: 3rem;
     letter-spacing: 0.5px;

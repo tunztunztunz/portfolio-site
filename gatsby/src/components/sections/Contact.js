@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Reverse from '../common/Reverse';
 import { Button } from '../common/Button';
@@ -29,7 +29,11 @@ const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
+    h3 {
+      font-weight: 600;
+      color: var(--rose);
+    }
   }
   .buttons {
     display: flex;
@@ -43,7 +47,8 @@ const Form = styled.form`
 `;
 
 const Contact = () => {
-  console.log('stay');
+  const [hasSubmitted, setHasSubmitted] = useState(false);
+  const show = localStorage.submitted;
   return (
     <section id="contact">
       <Form
@@ -55,7 +60,7 @@ const Contact = () => {
         <div className="form-header">
           <h1 className="header">Contact Me</h1>
           <p>
-            Want to get in <Reverse>touch?</Reverse> Fill out this form!
+            Want to get in <Reverse>touch?</Reverse>
           </p>
         </div>
         <input type="hidden" name="bot-field" />
@@ -96,9 +101,9 @@ const Contact = () => {
         </label>
         <div className="buttons">
           <Button type="submit">Send</Button>
-          <Button type="reset"
-                  value="Clear"
-          >Clear</Button>
+          <Button type="reset" value="Clear">
+            Clear
+          </Button>
         </div>
       </Form>
     </section>

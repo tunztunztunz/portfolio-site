@@ -10,7 +10,6 @@ const FooterStyles = styled.div`
 `;
 
 const Footer = () => {
-  console.log('');
   return (
     <FooterStyles>
       <p>&copy; Dustin Simensen {new Date().getFullYear()}</p>

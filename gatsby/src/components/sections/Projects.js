@@ -2,11 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 import Reverse from '../common/Reverse';
-import { Button } from '../common/Button'
+import { Button } from '../common/Button';
 
 const HeaderStyles = styled.section`
   text-align: center;
   margin-bottom: 6rem;
+  a {
+    text-decoration: none;
+  }
 `;
 
 const ProjectsGrid = styled.div`
@@ -54,7 +57,7 @@ const SingleProjectStyles = styled.div`
     Button {
       margin: 0 1rem;
     }
-    @media(min-width: 900px) {
+    @media (min-width: 900px) {
       justify-content: start;
     }
   }
@@ -105,13 +108,22 @@ const SingleProject = ({ project }) => (
 );
 
 const Projects = ({ projects }) => {
-  console.log('projects');
+  const githubLink = 'https://github.com/tunztunztunz';
   return (
     <section id="projects">
       <HeaderStyles>
         <h1 className="header">Projects</h1>
         <p>
-          Here are some <Reverse>projects</Reverse> I've been working on
+          Here are some{' '}
+          <Reverse>
+            <a
+              href={githubLink}
+              className="mark"
+            >
+              projects
+            </a>
+          </Reverse>{' '}
+          I've been working on
         </p>
       </HeaderStyles>
       <ProjectsGrid>

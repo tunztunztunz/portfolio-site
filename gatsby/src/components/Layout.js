@@ -17,7 +17,6 @@ const FooterStyles = styled(Footer)`
 `;
 
 const Layout = ({ children }) => {
-  console.log('');
   return (
     <>
       <GlobalStyles />
