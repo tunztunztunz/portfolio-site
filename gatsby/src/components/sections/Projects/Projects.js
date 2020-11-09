@@ -45,11 +45,11 @@ const Projects = ({ projects }) => {
         <h1 className="header">Projects</h1>
         <p>
           Here are some{' '}
-          <Reverse>
+          <span>
             <a href={githubLink} className="mark">
               projects
             </a>
-          </Reverse>{' '}
+          </span>{' '}
           I've worked on
         </p>
       </HeaderStyles>

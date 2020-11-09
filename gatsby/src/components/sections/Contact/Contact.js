@@ -14,7 +14,7 @@ const Contact = () => (
       <div className="form-header">
         <h1 className="header">Contact Me</h1>
         <p>
-          Want to get in <Reverse>touch?</Reverse>
+          Want to get in <span className="mark">touch?</span>
         </p>
       </div>
       <input type="hidden" name="bot-field" />
