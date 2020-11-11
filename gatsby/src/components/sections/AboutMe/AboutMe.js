@@ -7,14 +7,16 @@ const AboutMe = ({ person }) => {
   const bandLink = 'https://raincult.bandcamp.com/album/neon-rodeo';
   const uniPiper =
     'https://www.youtube.com/watch?v=cnVjkE87FDY&ab_channel=TheUnipiper';
+  const duration = '550';
 
   return (
     <section id="about">
       <AboutMeStyles>
         <div
           data-sal="slide-left"
+          data-sal-duration={duration}
           data-sal-delay="300"
-          data-sal-easing="ease-out"
+          data-sal-easing="ease"
         >
           <Img
             fluid={person.image.asset.fluid}
@@ -23,7 +25,12 @@ const AboutMe = ({ person }) => {
           />
         </div>
         <div>
-          <p data-sal="slide-right" data-sal-delay="400" data-sal-easing="ease">
+          <p
+            data-sal="slide-right"
+            data-sal-delay="400"
+            data-sal-duration={duration}
+            data-sal-easing="ease"
+          >
             Howdy pardner 🤠 ! I’m a web developer based out of{' '}
             <a href={uniPiper} target="_blank" className="mark">
               Portland, Oregon
@@ -46,6 +53,7 @@ const AboutMe = ({ person }) => {
             className="mark"
             data-sal="slide-left"
             data-sal-delay="500"
+            data-sal-duration={duration}
             data-sal-easing="ease"
           >
             HTML5 CSS3 JAVASCRIPT NODE.JS REACT.JS EXPRESS.JS STYLED-COMPONENTS

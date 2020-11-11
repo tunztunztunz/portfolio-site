@@ -8,6 +8,8 @@ import {
   SingleProjectStyles,
 } from './ProjectsStyles';
 
+const duration = '400';
+
 const SingleProject = ({ project }) => {
   console.log('stay');
   return (
@@ -15,7 +17,8 @@ const SingleProject = ({ project }) => {
       <div
         className="img-div"
         data-sal="slide-right"
-        data-sal-delay="500"
+        data-sal-delay="400"
+        data-sal-duration={duration}
         data-sal-easing="ease-out"
       >
         <Img fluid={project.image.asset.fluid} alt={project.name} />
@@ -28,14 +31,16 @@ const SingleProject = ({ project }) => {
       <div className="project-information">
         <h2
           data-sal="slide-left"
-          data-sal-delay="550"
+          data-sal-delay="450"
+          data-sal-duration={duration}
           data-sal-easing="ease-out"
         >
           <span>{project.name}</span>
         </h2>
         <p
           data-sal="slide-left"
-          data-sal-delay="600"
+          data-sal-delay="500"
+          data-sal-duration={duration}
           data-sal-easing="ease-out"
         >
           {project.description}
@@ -44,7 +49,8 @@ const SingleProject = ({ project }) => {
         <div
           className="buttons"
           data-sal="slide-left"
-          data-sal-delay="600"
+          data-sal-delay="500"
+          data-sal-duration={duration}
           data-sal-easing="ease-out"
         >
           <Button>
@@ -72,11 +78,17 @@ const Projects = ({ projects }) => {
           className="header"
           data-sal="slide-up"
           data-sal-delay="400"
+          data-sal-duration={duration}
           data-sal-easing="ease-out"
         >
           Projects
         </h1>
-        <p data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out">
+        <p
+          data-sal="slide-up"
+          data-sal-delay="500"
+          data-sal-duration={duration}
+          data-sal-easing="ease-out"
+        >
           Here are some{' '}
           <span>
             <a href={githubLink} className="mark">

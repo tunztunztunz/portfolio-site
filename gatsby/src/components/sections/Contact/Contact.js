@@ -3,6 +3,8 @@ import Reverse from '../../common/Reverse';
 import { Button } from '../../common/Button';
 import FormStyles from './FormStyles';
 
+const duration = '400';
+
 const Contact = () => (
   <section id="contact">
     <FormStyles
@@ -16,11 +18,17 @@ const Contact = () => (
           className="header"
           data-sal="slide-up"
           data-sal-delay="400"
+          data-sal-duration={duration}
           data-sal-easing="ease-out"
         >
           Contact Me
         </h1>
-        <p data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out">
+        <p
+          data-sal="slide-up"
+          data-sal-delay="500"
+          data-sal-duration={duration}
+          data-sal-easing="ease-out"
+        >
           Want to get in <span className="mark">touch?</span>
         </p>
       </div>
@@ -29,6 +37,7 @@ const Contact = () => (
       <label
         data-sal="slide-right"
         data-sal-delay="500"
+        data-sal-duration={duration}
         data-sal-easing="ease-out"
       >
         Name
@@ -43,6 +52,7 @@ const Contact = () => (
       <label
         data-sal="slide-left"
         data-sal-delay="600"
+        data-sal-duration={duration}
         data-sal-easing="ease-out"
       >
         Email
@@ -57,6 +67,7 @@ const Contact = () => (
       <label
         data-sal="slide-right"
         data-sal-delay="700"
+        data-sal-duration={duration}
         data-sal-easing="ease-out"
       >
         Subject
@@ -71,6 +82,7 @@ const Contact = () => (
       <label
         data-sal="slide-left"
         data-sal-delay="800"
+        data-sal-duration={duration}
         data-sal-easing="ease-out"
       >
         Message
@@ -86,6 +98,7 @@ const Contact = () => (
         className="buttons"
         data-sal="fade"
         data-sal-delay="850"
+        data-sal-duration={duration}
         data-sal-easing="ease-out"
       >
         <Button type="submit">Send</Button>
