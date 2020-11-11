@@ -12,6 +12,13 @@ export default {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
+      resolve: 'gatsby-plugin-scroll-reveal',
+      options: {
+        threshold: 0.05,
+        once: false,
+      },
+    },
+    {
       // this is the name of the plugin you are adding
       resolve: 'gatsby-source-sanity',
       options: {

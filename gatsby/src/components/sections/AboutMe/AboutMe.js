@@ -1,6 +1,5 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import Reverse from '../../common/Reverse';
 import AboutMeStyles from './AboutMeStyles';
 
 const AboutMe = ({ person }) => {
@@ -12,10 +11,20 @@ const AboutMe = ({ person }) => {
   return (
     <section id="about">
       <AboutMeStyles>
-        <Img fluid={person.image.asset.fluid} alt={person.name} />
-        <div className="about-grid">
-          <p>
-            Howdy pardner 🤠! I’m a web developer based out of{' '}
+        <div
+          data-sal="slide-left"
+          data-sal-delay="300"
+          data-sal-easing="ease-out"
+        >
+          <Img
+            fluid={person.image.asset.fluid}
+            alt={person.name}
+            className="about-grid"
+          />
+        </div>
+        <div>
+          <p data-sal="slide-right" data-sal-delay="400" data-sal-easing="ease">
+            Howdy pardner 🤠 ! I’m a web developer based out of{' '}
             <a href={uniPiper} target="_blank" className="mark">
               Portland, Oregon
             </a>
@@ -33,7 +42,12 @@ const AboutMe = ({ person }) => {
             and enjoy writing. The current stack of languages/technologies I’m
             familiar with is:
           </p>
-          <p className="mark">
+          <p
+            className="mark"
+            data-sal="slide-left"
+            data-sal-delay="500"
+            data-sal-easing="ease"
+          >
             HTML5 CSS3 JAVASCRIPT NODE.JS REACT.JS EXPRESS.JS STYLED-COMPONENTS
             GRAPHQL GATSBY.JS
           </p>

@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   z-index: 2;
   align-self: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     background: var(--white);
     top: 0;
     left: 0;
@@ -31,6 +31,7 @@ export const Name = styled.a`
   text-decoration: none;
 
   @media (max-width: 600px) {
+    margin-top: -0.75rem;
     font-size: 1rem;
   }
 `;
@@ -40,7 +41,7 @@ export const Toggle = styled.div`
   height: 100%;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     display: flex;
   }
 `;
@@ -49,11 +50,11 @@ export const Navbox = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: start;
-  a {
-    margin-left: 3rem;
-  }
   height: 100%;
   @media (max-width: 800px) {
+    a {
+      margin-left: 3rem;
+    }
     position: fixed;
     width: 100%;
     justify-content: flex-start;
@@ -98,6 +99,10 @@ export const Hamburger = styled.div`
   }
 
   ::after {
+    @media (max-width: 600px) {
+      height: 2px;
+      display: none;
+    }
     opacity: ${(props) => (props.open ? '0' : '1')};
     transform: ${(props) => (props.open ? 'rotate(90deg) ' : 'rotate(0deg)')};
     top: 10px;
