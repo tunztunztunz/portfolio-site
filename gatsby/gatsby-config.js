@@ -15,7 +15,7 @@ export default {
       resolve: 'gatsby-plugin-scroll-reveal',
       options: {
         threshold: 0.05,
-        once: false,
+        once: true,
       },
     },
     {
