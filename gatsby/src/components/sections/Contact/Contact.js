@@ -76,7 +76,7 @@ const Contact = () => (
           name="subject"
           id="subject"
           required
-          placeholder="Hello Dustin"
+          placeholder="I am not a robot"
         />
       </label>
       <label

@@ -6,7 +6,7 @@ export default {
   siteMetadata: {
     title: `Dustin Simensen`,
     siteUrl: 'https://nifty-austin-dc1597.netlify.app/',
-    description: 'Web development portfolio for Dustin Simensen',
+    description: 'Dustin Simensen - Web Developer',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
