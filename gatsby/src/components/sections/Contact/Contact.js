@@ -39,6 +39,7 @@ const Contact = () => (
         data-sal-delay="500"
         data-sal-duration={duration}
         data-sal-easing="ease-out"
+        htmlFor="name"
       >
         Name
         <input
@@ -54,6 +55,7 @@ const Contact = () => (
         data-sal-delay="600"
         data-sal-duration={duration}
         data-sal-easing="ease-out"
+        htmlFor="email"
       >
         Email
         <input
@@ -69,6 +71,7 @@ const Contact = () => (
         data-sal-delay="700"
         data-sal-duration={duration}
         data-sal-easing="ease-out"
+        htmlFor="subject"
       >
         Subject
         <input
@@ -84,6 +87,7 @@ const Contact = () => (
         data-sal-delay="800"
         data-sal-duration={duration}
         data-sal-easing="ease-out"
+        htmlFor="message"
       >
         Message
         <textarea

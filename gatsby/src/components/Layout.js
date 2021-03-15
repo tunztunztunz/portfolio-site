@@ -9,6 +9,7 @@ import Typography from '../styles/Typography';
 
 const ContentStyles = styled.div`
   padding: 2rem 0;
+  line-height: 1.75rem;
 `;
 
 const FooterStyles = styled(Footer)`
