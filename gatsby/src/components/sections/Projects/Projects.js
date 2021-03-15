@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Img from 'gatsby-image';
-import Reverse from '../../common/Reverse';
 import { Button } from '../../common/Button';
 import {
   HeaderStyles,
@@ -54,12 +53,12 @@ const SingleProject = ({ project }) => {
           data-sal-easing="ease-out"
         >
           <Button>
-            <a href={project.liveLink} target="_blank">
+            <a href={project.liveLink} target="_blank" rel="noreferrer">
               Live
             </a>
           </Button>
           <Button>
-            <a href={project.githubLink} target="_blank">
+            <a href={project.githubLink} target="_blank" rel="noreferrer">
               Github
             </a>
           </Button>
@@ -99,7 +98,8 @@ const Projects = ({ projects }) => {
         </p>
       </HeaderStyles>
       <ProjectsGrid>
-        {projects.map((project) => (
+        {console.log(projects)}
+        {projects.reverse().map((project) => (
           <SingleProject project={project} key={project.name} />
         ))}
       </ProjectsGrid>

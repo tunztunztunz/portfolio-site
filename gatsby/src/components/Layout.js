@@ -16,18 +16,16 @@ const FooterStyles = styled(Footer)`
   flex-shrink: 0;
 `;
 
-const Layout = ({ children }) => {
-  return (
-    <>
-      <GlobalStyles />
-      <Typography />
-      <ContentStyles>
-        <Nav />
-        <Container>{children}</Container>
-      </ContentStyles>
-      <FooterStyles />
-    </>
-  );
-};
+const Layout = ({ children }) => (
+  <>
+    <GlobalStyles />
+    <Typography />
+    <ContentStyles>
+      <Nav />
+      <Container>{children}</Container>
+    </ContentStyles>
+    <FooterStyles />
+  </>
+);
 
 export default Layout;

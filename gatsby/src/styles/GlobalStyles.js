@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
     color: var(--black);
     background: var(--white);
-    line-height: 2rem;
+    line-height: 1.75rem;
     @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
     font-family: 'Gentium Book Basic', serif;
     font-family: 'Open Sans', sans-serif;
