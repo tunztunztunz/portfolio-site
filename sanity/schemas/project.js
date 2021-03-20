@@ -3,7 +3,7 @@ import { MdWork as icon } from 'react-icons/md';
 export default {
   name: 'project',
   title: 'Project',
-  type: 'document',
+  type: 'object',
   icon,
   fields: [
     {
@@ -24,8 +24,49 @@ export default {
     {
       name: 'description',
       title: 'Description',
-      type: 'text',
       description: 'Describe what you did on the project',
+      type: 'array',
+      of: [
+        {
+          type: 'block',
+          // Only allow these block styles
+          styles: [
+            { title: 'Normal', value: 'normal' },
+            { title: 'H1', value: 'h1' },
+            { title: 'H2', value: 'h2' },
+          ],
+          // Only allow numbered lists
+          lists: [{ title: 'Numbered', value: 'number' }],
+          marks: {
+            annotations: [
+              {
+                name: 'link',
+                type: 'object',
+                title: 'External link',
+                fields: [
+                  {
+                    name: 'href',
+                    type: 'url',
+                    title: 'URL',
+                  },
+                  {
+                    title: 'Open in new tab',
+                    name: 'blank',
+                    description:
+                      'Read https://css-tricks.com/use-target_blank/',
+                    type: 'boolean',
+                  },
+                ],
+              },
+            ],
+            // Only allow these decorators
+            decorators: [
+              { title: 'Strong', value: 'strong' },
+              { title: 'Emphasis', value: 'em' },
+            ],
+          },
+        },
+      ],
     },
     {
       name: 'githubLink',
@@ -55,4 +96,10 @@ export default {
       },
     },
   ],
+  preview: {
+    select: {
+      title: 'name',
+      media: 'image',
+    },
+  },
 };

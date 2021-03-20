@@ -32,18 +32,33 @@ const AboutMe = ({ person }) => {
             data-sal-easing="ease"
           >
             Howdy pardner 🤠 ! I’m a web developer based out of{' '}
-            <a href={uniPiper} target="_blank" className="mark">
+            <a
+              href={uniPiper}
+              target="_blank"
+              className="mark"
+              rel="noreferrer"
+            >
               Portland, Oregon
             </a>
-            . In the past year I’ve been learning to build things with{' '}
-            <a href={githubLink} target="_blank" className="mark">
+            . I enjoy building things with{' '}
+            <a
+              href={githubLink}
+              target="_blank"
+              className="mark"
+              rel="noreferrer"
+            >
               Javascript
             </a>
-            . Lately, I’ve been focusing on modern frameworks like React.js,
-            Bootstrap, and Styled Components for front-end development. For
-            backend development, I’m familiar with Express.js, Mongoose,
+            . I mainly work with modern frameworks like React.js, Gatsby.js,
+            Next.js, Bootstrap, and Styled Components for front-end development.
+            For backend development, I’m familiar with Express.js, Mongoose,
             Graphql, and Mongodb. When I’m not coding, I sling guitar riffs in{' '}
-            <a href={bandLink} target="_blank" className="mark">
+            <a
+              href={bandLink}
+              target="_blank"
+              className="mark"
+              rel="noreferrer"
+            >
               bands
             </a>{' '}
             and enjoy writing. The current stack of languages/technologies I’m
@@ -56,8 +71,8 @@ const AboutMe = ({ person }) => {
             data-sal-duration={duration}
             data-sal-easing="ease"
           >
-            HTML5 CSS3 JAVASCRIPT NODE.JS REACT.JS EXPRESS.JS STYLED-COMPONENTS
-            GRAPHQL GATSBY.JS
+            HTML5 CSS3 JAVASCRIPT NODE.JS REACT EXPRESS STYLED-COMPONENTS
+            GRAPHQL GATSBY NEXT
           </p>
         </div>
       </AboutMeStyles>

@@ -5,7 +5,7 @@ const AboutMeStyles = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   justify-items: center;
-  text-align: center;
+  text-align: left;
   margin-top: 5rem;
   a {
     text-decoration: none;

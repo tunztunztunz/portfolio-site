@@ -14,7 +14,8 @@ const HomepageStyles = styled.div`
 
 const Homepage = ({ data }) => {
   const person = data.person.nodes[0];
-  const projects = data.projects.nodes;
+  const { projects } = data.projects.edges[0].node;
+  console.log(projects);
   return (
     <>
       <SEO title="Dustin Simensen" />
@@ -47,23 +48,27 @@ export const query = graphql`
         }
       }
     }
-    projects: allSanityProject {
-      nodes {
-        name
-        description
-        slug {
-          current
-        }
-        image {
-          asset {
-            fluid(maxWidth: 1000) {
-              ...GatsbySanityImageFluid
+    projects: allSanityProjects {
+      edges {
+        node {
+          projects {
+            _rawDescription(resolveReferences: { maxDepth: 10 })
+            githubLink
+            image {
+              asset {
+                fluid {
+                  ...GatsbySanityImageFluid
+                }
+              }
             }
+            liveLink
+            name
+            slug {
+              current
+            }
+            technology
           }
         }
-        githubLink
-        liveLink
-        technology
       }
     }
   }
