@@ -5,6 +5,7 @@ import Projects from '../components/sections/Projects/Projects';
 import AboutMe from '../components/sections/AboutMe/AboutMe';
 import Contact from '../components/sections/Contact/Contact';
 import SEO from '../components/SEO';
+import Layout from '../components/Layout';
 
 const HomepageStyles = styled.div`
   display: grid;
@@ -18,12 +19,14 @@ const Homepage = ({ data }) => {
 
   return (
     <>
-      <SEO title="Dustin Simensen" />
-      <HomepageStyles>
-        <AboutMe person={person} />
-        <Projects projects={projects} />
-        <Contact />
-      </HomepageStyles>
+      <Layout>
+        <SEO title="Dustin Simensen" />
+        <HomepageStyles>
+          <AboutMe person={person} />
+          <Projects projects={projects} />
+          <Contact />
+        </HomepageStyles>
+      </Layout>
     </>
   );
 };

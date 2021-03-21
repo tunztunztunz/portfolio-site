@@ -1,6 +1,10 @@
+import React from 'react';
 import styled from 'styled-components';
+import useSound from 'use-sound';
+import lowPop from '../../assets/sounds/lowPop.mp3';
+import highPop from '../../assets/sounds/highPop.mp3';
 
-export const Button = styled.button`
+const StyledButton = styled.button`
   display: inline-block;
   background: var(--white);
   color: var(--black);
@@ -14,3 +18,13 @@ export const Button = styled.button`
     border-color: var(--rose);
   }
 `;
+
+export const Button = ({ children }) => {
+  const [playActive] = useSound(lowPop, { volume: 0.25 });
+  const [playOn] = useSound(highPop, { volume: 0.25 });
+  return (
+    <StyledButton onMouseDown={playActive} onMouseUp={playOn}>
+      {children}
+    </StyledButton>
+  );
+};

@@ -1,5 +1,4 @@
 import React from 'react';
-import Reverse from '../../common/Reverse';
 import { Button } from '../../common/Button';
 import FormStyles from './FormStyles';
 

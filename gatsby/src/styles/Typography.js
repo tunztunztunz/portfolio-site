@@ -1,9 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 import openSans from '../assets/fonts/Open_Sans/OpenSans-Regular.ttf';
-import openSansBold from '../assets/fonts/Open_Sans/OpenSans-Bold.ttf';
-import gentiumBookBasic from '../assets/fonts/Gentium_Book_Basic/GentiumBookBasic-Regular.ttf';
-import gentiumBookBasicBold from '../assets/fonts/Gentium_Book_Basic/GentiumBookBasic-Bold.ttf';
 
 const Typography = createGlobalStyle`
   @font-face {

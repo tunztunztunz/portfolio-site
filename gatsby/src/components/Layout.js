@@ -17,9 +17,9 @@ const FooterStyles = styled(Footer)``;
 const Layout = ({ children }) => (
   <>
     <GlobalStyles />
-    <Typography />
     <ContentStyles>
       <Nav />
+      <Typography />
       <Container>{children}</Container>
     </ContentStyles>
     <FooterStyles />

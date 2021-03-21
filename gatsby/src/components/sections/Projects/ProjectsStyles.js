@@ -35,7 +35,6 @@ export const SingleProjectStyles = styled.div`
     --columns: 1fr 2fr;
   }
   p {
-    //font-size: 1.25rem;
     padding: 0 8%;
     margin-bottom: 0;
     text-align: left;
@@ -76,10 +75,10 @@ export const SingleProjectStyles = styled.div`
   .gatsby-image-wrapper {
     margin-top: 0.3rem;
     min-width: 280px;
-    height: 100%;
+
     @media (min-width: 900px) {
       width: 400px;
-      max-height: 269px;
+      /* height: 280px; */
     }
   }
 `;

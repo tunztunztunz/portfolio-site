@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import Img from 'gatsby-image';
 import { VscFoldDown as Down } from 'react-icons/vsc';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import useSound from 'use-sound';
 import AboutMeStyles from './AboutMeStyles';
+import lowPop from '../../../assets/sounds/lowPop.mp3';
+import highPop from '../../../assets/sounds/highPop.mp3';
 
 const AboutMe = ({ person }) => {
   const [hasNavigated, setHasNavigated] = useState(false);
   const [animate, setAnimate] = useState(false);
+  const [playActive] = useSound(lowPop, { volume: 0.25 });
+  const [playOn] = useSound(highPop, { volume: 0.25 });
   const githubLink = 'https://github.com/tunztunztunz';
   const bandLink = 'https://raincult.bandcamp.com/album/neon-rodeo';
   const uniPiper =
@@ -80,6 +85,8 @@ const AboutMe = ({ person }) => {
               data-sal-delay="1000"
               data-sal-duration={duration}
               data-sal-easing="ease-out-back"
+              onMouseDown={playActive}
+              onMouseUp={playOn}
               onClick={() => {
                 setAnimate(true);
                 setHasNavigated(true);

@@ -8,6 +8,11 @@ export default {
   __experimental_actions: [/* 'create', */ 'update', /* 'delete', */ 'publish'],
   fields: [
     {
+      name: 'heading',
+      title: 'Heading',
+      type: 'string',
+    },
+    {
       name: 'text',
       type: 'text',
       title: 'Text',
@@ -17,6 +22,11 @@ export default {
       name: 'image',
       type: 'image',
       title: 'Image',
+    },
+    {
+      name: 'hoverImage',
+      title: 'Hover Image',
+      type: 'image',
     },
   ],
   preview: {
