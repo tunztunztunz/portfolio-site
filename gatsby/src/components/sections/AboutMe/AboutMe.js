@@ -1,35 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Img from 'gatsby-image';
+import { VscFoldDown as Down } from 'react-icons/vsc';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import AboutMeStyles from './AboutMeStyles';
 
 const AboutMe = ({ person }) => {
+  const [hasNavigated, setHasNavigated] = useState(false);
+  const [animate, setAnimate] = useState(false);
   const githubLink = 'https://github.com/tunztunztunz';
   const bandLink = 'https://raincult.bandcamp.com/album/neon-rodeo';
   const uniPiper =
     'https://www.youtube.com/watch?v=cnVjkE87FDY&ab_channel=TheUnipiper';
-  const duration = '550';
+  const duration = '1000';
 
   return (
     <section id="about">
-      <AboutMeStyles>
+      <AboutMeStyles hasNavigated={hasNavigated} animate={animate}>
         <div
           data-sal="slide-left"
           data-sal-duration={duration}
-          data-sal-delay="300"
-          data-sal-easing="ease"
+          data-sal-delay="200"
+          data-sal-easing="ease-out-back"
         >
-          <Img
-            fluid={person.image.asset.fluid}
-            alt={person.name}
-            className="about-grid"
-          />
+          <Img fluid={person.image.asset.fluid} alt={person.name} />
         </div>
         <div>
           <p
             data-sal="slide-right"
-            data-sal-delay="400"
+            data-sal-delay="500"
             data-sal-duration={duration}
-            data-sal-easing="ease"
+            data-sal-easing="ease-out-back"
           >
             Howdy pardner 🤠 ! I’m a web developer based out of{' '}
             <a
@@ -67,13 +67,25 @@ const AboutMe = ({ person }) => {
           <p
             className="mark"
             data-sal="slide-left"
-            data-sal-delay="500"
+            data-sal-delay="700"
             data-sal-duration={duration}
-            data-sal-easing="ease"
+            data-sal-easing="ease-out-back"
           >
             HTML5 CSS3 JAVASCRIPT NODE.JS REACT EXPRESS STYLED-COMPONENTS
             GRAPHQL GATSBY NEXT
           </p>
+          <AnchorLink href="#projects" offset="700">
+            <Down
+              data-sal="zoom-in"
+              data-sal-delay="1000"
+              data-sal-duration={duration}
+              data-sal-easing="ease-out-back"
+              onClick={() => {
+                setAnimate(true);
+                setHasNavigated(true);
+              }}
+            />
+          </AnchorLink>
         </div>
       </AboutMeStyles>
     </section>

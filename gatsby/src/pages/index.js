@@ -15,7 +15,7 @@ const HomepageStyles = styled.div`
 const Homepage = ({ data }) => {
   const person = data.person.nodes[0];
   const { projects } = data.projects.edges[0].node;
-  console.log(projects);
+
   return (
     <>
       <SEO title="Dustin Simensen" />

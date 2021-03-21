@@ -12,10 +12,7 @@ const ContentStyles = styled.div`
   line-height: 1.75rem;
 `;
 
-const FooterStyles = styled(Footer)`
-  // for sticky footer
-  flex-shrink: 0;
-`;
+const FooterStyles = styled(Footer)``;
 
 const Layout = ({ children }) => (
   <>

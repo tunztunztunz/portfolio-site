@@ -38,7 +38,7 @@ export const SingleProjectStyles = styled.div`
     //font-size: 1.25rem;
     padding: 0 8%;
     margin-bottom: 0;
-    text-align: center;
+    text-align: left;
     @media (min-width: 900px) {
       text-align: left;
       padding: 0;

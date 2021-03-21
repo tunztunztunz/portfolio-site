@@ -5,8 +5,8 @@ dotenv.config({ path: '.env' });
 export default {
   siteMetadata: {
     title: `Dustin Simensen`,
-    siteUrl: 'https://nifty-austin-dc1597.netlify.app/',
-    description: 'Dustin Simensen - Web Developer',
+    siteUrl: 'https://www.dustinsimensen.com',
+    description: 'Portfolio site for Dustin Simensen.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,7 +19,6 @@ export default {
       },
     },
     {
-      // this is the name of the plugin you are adding
       resolve: 'gatsby-source-sanity',
       options: {
         projectId: 'z135q00r',
