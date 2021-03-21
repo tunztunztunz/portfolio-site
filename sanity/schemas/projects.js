@@ -6,6 +6,7 @@ export default {
   type: 'document',
   icon,
   __experimental_actions: [/* 'create', */ 'update', /* 'delete', */ 'publish'],
+
   fields: [
     {
       name: 'projects',
