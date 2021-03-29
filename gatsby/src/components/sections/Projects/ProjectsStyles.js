@@ -3,9 +3,6 @@ import styled from 'styled-components';
 export const HeaderStyles = styled.section`
   text-align: center;
   margin-bottom: 6rem;
-  a {
-    text-decoration: none;
-  }
 `;
 
 export const ProjectsGrid = styled.div`
@@ -26,9 +23,6 @@ export const SingleProjectStyles = styled.div`
   gap: 2rem;
   justify-items: center;
   text-align: center;
-  a {
-    text-decoration: none;
-  }
   @media (min-width: 900px) {
     justify-items: center;
     text-align: left;

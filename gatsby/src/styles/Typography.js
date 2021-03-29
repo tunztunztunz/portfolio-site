@@ -23,9 +23,7 @@ const Typography = createGlobalStyle`
   }
   a {
     color: var(--black);
-    text-decoration-color: var(--red);
-    /* Chrome renders this weird with this font, so we turn it off */
-    //text-decoration-skip-ink: none;
+    text-decoration-color: var(--rose);
   }
   .mark {
     color: var(--rose);

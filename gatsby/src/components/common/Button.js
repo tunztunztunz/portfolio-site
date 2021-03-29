@@ -13,8 +13,15 @@ const StyledButton = styled.button`
   padding: 0.25em 1.25em;
   border: 1px solid var(--black);
   border-radius: 8px;
+  a {
+    text-decoration: none;
+  }
   :hover {
-    color: var(--rose);
+    transition: all 600ms;
+    background-color: var(--rose);
+    a {
+      color: var(--white);
+    }
     border-color: var(--rose);
   }
 `;

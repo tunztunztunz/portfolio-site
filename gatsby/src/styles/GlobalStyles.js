@@ -23,6 +23,10 @@ const GlobalStyles = createGlobalStyle`
     flex-direction: column;
     font-size: 16px;
   }
+  body, html {
+    width: 100%;
+    overflow-x: hidden;
+  }
   img {
     max-width: 100%;
   }

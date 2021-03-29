@@ -9,9 +9,6 @@ const AboutMeStyles = styled.div`
   transition: all 3s ease-out;
 
   height: 100%;
-  a {
-    text-decoration: none;
-  }
   svg {
     display: none;
     margin: 5rem auto;
@@ -42,10 +39,12 @@ const AboutMeStyles = styled.div`
       display: block;
       visibility: ${(props) => (props.hasNavigated ? 'hidden' : 'visible')};
       transition: all 600ms ease-out;
+
       animation-name: ${(props) => (props.animate ? 'shrink' : 'none')};
       animation-duration: 600ms;
       animation-iteration-count: initial;
       animation-timing-function: linear;
+
       @keyframes shrink {
         from {
           visibility: visible;
