@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const HeaderStyles = styled.section`
   text-align: center;
   margin-bottom: 6rem;
+  h2 {
+    font-size: 48px;
+  }
 `;
 
 export const ProjectsGrid = styled.div`
@@ -16,13 +19,15 @@ export const ProjectsGrid = styled.div`
   }
 `;
 
-export const SingleProjectStyles = styled.div`
+export const SingleProjectStyles = styled.article`
   --columns: 1fr;
   display: grid;
+  position: relative;
   grid-template-columns: var(--columns);
   gap: 2rem;
   justify-items: center;
   text-align: center;
+
   @media (min-width: 900px) {
     justify-items: center;
     text-align: left;
@@ -37,12 +42,14 @@ export const SingleProjectStyles = styled.div`
       padding: 0;
     }
   }
-  h2 {
+  h3 {
+    display: block;
+    top: 0;
+    font-size: 24px;
     padding: 0;
     margin: 0;
-    display: inline-block;
-    top: 0;
   }
+
   .buttons {
     display: flex;
     justify-content: center;
@@ -54,6 +61,7 @@ export const SingleProjectStyles = styled.div`
     }
   }
   .img-div {
+    position: relative;
     display: flex;
     flex-direction: column;
   }
@@ -65,7 +73,51 @@ export const SingleProjectStyles = styled.div`
     text-transform: uppercase;
     font-size: 0.8rem;
   }
-
+  .video {
+    z-index: 2;
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    background-color: red;
+  }
+  .hovered {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .hovered:hover {
+    opacity: 1;
+  }
+  .tooltip {
+    opacity: ${(props) => (props.tooltipOn ? 1 : 0)};
+    width: 120px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 5px;
+    position: absolute;
+    z-index: 2;
+    bottom: 175%;
+    left: 50%;
+    margin-left: -60px;
+    transition: opacity 1s;
+    @media screen and (max-width: 750px) {
+      padding: 5px;
+      font-size: 16px;
+      width: 150px;
+      bottom: 125%;
+    }
+  }
+  .tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--black) transparent transparent transparent;
+  }
   .gatsby-image-wrapper {
     margin-top: 0.3rem;
     min-width: 280px;

@@ -7,17 +7,32 @@ const AboutMeStyles = styled.div`
   text-align: left;
   margin-top: 3rem;
   transition: all 3s ease-out;
-
-  height: 100%;
   svg {
     display: none;
     margin: 5rem auto;
     font-size: 50px;
   }
-  .technologies {
-    word-spacing: 0.25rem;
-    font-size: 3rem;
-    text-transform: uppercase;
+  ul {
+    text-align: left;
+    @media screen and (min-width: 800px) {
+      text-align: center;
+    }
+    padding-left: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 0 0.5rem;
+    }
+    li:nth-child(even) {
+      font-size: 1.25rem;
+    }
+  }
+  p {
+    display: inline;
+  }
+  .loop {
+    margin: 0 0.5rem;
+    font-size: 1rem;
   }
   .gatsby-image-wrapper {
     margin-bottom: 3rem;
@@ -27,11 +42,10 @@ const AboutMeStyles = styled.div`
     min-width: 280px;
   }
 
-  @media screen and (min-width: 768px) and (min-height: 850px) {
+  @media screen and (min-width: 768px) and (min-height: 750px) {
     /* The about me section */
-    height: 100vh;
     position: relative;
-    max-height: ${(props) => (props.hasNavigated ? '55vh' : '100vh')};
+    height: ${(props) => (props.hasNavigated ? '450px' : '100vh')};
     padding: ${(props) => (props.hasNavigated ? '15px' : '0 15px')};
     transition: all 0.75s ease-in-out;
     /* The SVG button */
@@ -56,10 +70,6 @@ const AboutMeStyles = styled.div`
         }
       }
     }
-  }
-  @media screen and (min-width: 1440px) and (min-height: 850px) {
-    max-height: ${(props) =>
-      props.hasNavigated ? 'clamp(600px, 60vh, 600px)' : '100vh'};
   }
 `;
 

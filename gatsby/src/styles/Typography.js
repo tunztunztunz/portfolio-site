@@ -6,6 +6,7 @@ const Typography = createGlobalStyle`
   @font-face {
     font-family: openSans;
     src: url(${openSans});
+    font-display: swap;
   }
   html {
     font-family: openSans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

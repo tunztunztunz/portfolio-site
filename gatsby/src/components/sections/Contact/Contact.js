@@ -5,7 +5,7 @@ import FormStyles from './FormStyles';
 const duration = '400';
 
 const Contact = () => (
-  <section id="contact">
+  <article id="contact">
     <FormStyles
       method="post"
       netlify-honeypot="bot-field"
@@ -13,7 +13,7 @@ const Contact = () => (
       name="contact"
     >
       <div className="form-header">
-        <h1
+        <h2
           className="header"
           data-sal="slide-up"
           data-sal-delay="400"
@@ -21,14 +21,23 @@ const Contact = () => (
           data-sal-easing="ease-out"
         >
           Contact Me
-        </h1>
+        </h2>
         <p
           data-sal="slide-up"
           data-sal-delay="500"
           data-sal-duration={duration}
           data-sal-easing="ease-out"
         >
-          Want to get in <span className="mark">touch?</span>
+          Want to get in <span className="mark">touch?</span> You can fill out
+          the form below,{' '}
+          <a href="mailto:dustinsimensen@gmail.com" className="mark">
+            send an e-mail
+          </a>
+          , or{' '}
+          <a href="tel:971-506-8025" className="mark">
+            call/text
+          </a>
+          .
         </p>
       </div>
       <input type="hidden" name="bot-field" />
@@ -110,7 +119,7 @@ const Contact = () => (
         </Button>
       </div>
     </FormStyles>
-  </section>
+  </article>
 );
 
 export default Contact;

@@ -17,6 +17,7 @@ const StyledButton = styled.button`
     text-decoration: none;
   }
   :hover {
+    cursor: pointer;
     transition: all 600ms;
     background-color: var(--rose);
     a {
@@ -26,11 +27,16 @@ const StyledButton = styled.button`
   }
 `;
 
-export const Button = ({ children }) => {
+export const Button = ({ children, openVideo }) => {
   const [playActive] = useSound(lowPop, { volume: 0.25 });
   const [playOn] = useSound(highPop, { volume: 0.25 });
+
   return (
-    <StyledButton onMouseDown={playActive} onMouseUp={playOn}>
+    <StyledButton
+      onMouseDown={playActive}
+      onMouseUp={playOn}
+      onClick={openVideo ? () => openVideo() : () => ''}
+    >
       {children}
     </StyledButton>
   );

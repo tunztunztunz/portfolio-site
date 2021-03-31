@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Projects from '../components/sections/Projects/Projects';
@@ -10,7 +10,7 @@ import Layout from '../components/Layout';
 const HomepageStyles = styled.div`
   display: grid;
   grid-template-rows: auto;
-  gap: 5rem;
+  gap: 10rem;
 `;
 
 const Homepage = ({ data }) => {
@@ -64,11 +64,19 @@ export const query = graphql`
                 }
               }
             }
+            gif {
+              asset {
+                fluid {
+                  ...GatsbySanityImageFluid
+                }
+              }
+            }
             liveLink
             name
             slug {
               current
             }
+            videoId
             technology
           }
         }

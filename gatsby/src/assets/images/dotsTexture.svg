@@ -1,0 +1,147 @@
+<svg xlink="http://www.w3.org/1999/xlink" viewBox="0 0 6400 4800" xmlns="http://www.w3.org/2000/svg"
+  style="transform: scale(1);">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="13.275" result="blur">
+      </feGaussianBlur>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 19 -9" result="good">
+      </feColorMatrix>
+      <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+    </filter>
+    <path
+      d="M211,272C202,253 205,232 217,219C232,205 253,202 269,209C287,219 297,238 295,256C291,276 276,291 258,294C238,297 219,287 211,272z"
+      id="P0"></path>
+    <path
+      d="M285,213C301,230 304,253 296,272C285,292 264,303 244,301C221,296 204,279 200,260C197,236 208,215 225,205C247,196 270,199 285,213z"
+      id="P1"></path>
+    <path
+      d="M175,264C171,230 187,198 213,183C245,169 280,174 302,195C326,220 331,255 319,282C302,313 270,329 240,325C206,319 181,294 175,264z"
+      id="P2"></path>
+    <path
+      d="M298,219C311,242 308,269 294,286C276,305 250,311 229,303C206,292 192,269 193,246C197,221 214,201 236,195C261,190 286,201 298,219z"
+      id="P3"></path>
+  </defs>
+  <rect id="RECT" width="6400" height="4800" fill="#FFFFFF"></rect>
+  <g id="group" fill="#111111" filter="url(#goo)" opacity="0.2">
+    <use x="-164" y="-335" href="#P1"></use>
+    <use x="-619" y="467" href="#P2"></use>
+    <use x="-346" y="758" href="#P2"></use>
+    <use x="-738" y="1473" href="#P3"></use>
+    <use x="-682" y="2113" href="#P3"></use>
+    <use x="-405" y="2669" href="#P0"></use>
+    <use x="-761" y="3248" href="#P1"></use>
+    <use x="-653" y="4317" href="#P1"></use>
+    <use x="-481" y="4713" href="#P0"></use>
+    <use x="-86" y="5402" href="#P0"></use>
+    <use x="388" y="-268" href="#P0"></use>
+    <use x="140" y="-12" href="#P1"></use>
+    <use x="301" y="674" href="#P2"></use>
+    <use x="64" y="1764" href="#P3"></use>
+    <use x="16" y="2290" href="#P1"></use>
+    <use x="64" y="2877" href="#P1"></use>
+    <use x="193" y="3747" href="#P3"></use>
+    <use x="-238" y="3892" href="#P2"></use>
+    <use x="32" y="4639" href="#P2"></use>
+    <use x="-35" y="5038" href="#P3"></use>
+    <use x="538" y="-451" href="#P1"></use>
+    <use x="375" y="405" href="#P2"></use>
+    <use x="905" y="487" href="#P1"></use>
+    <use x="802" y="1675" href="#P0"></use>
+    <use x="680" y="1868" href="#P2"></use>
+    <use x="210" y="3127" href="#P2"></use>
+    <use x="718" y="3444" href="#P0"></use>
+    <use x="859" y="4565" href="#P0"></use>
+    <use x="704" y="5009" href="#P0"></use>
+    <use x="906" y="5690" href="#P1"></use>
+    <use x="1714" y="-855" href="#P3"></use>
+    <use x="1648" y="-68" href="#P0"></use>
+    <use x="1014" y="464" href="#P3"></use>
+    <use x="904" y="1532" href="#P3"></use>
+    <use x="1004" y="1827" href="#P0"></use>
+    <use x="948" y="3159" href="#P2"></use>
+    <use x="1486" y="3302" href="#P2"></use>
+    <use x="1095" y="4169" href="#P3"></use>
+    <use x="1674" y="5120" href="#P2"></use>
+    <use x="1374" y="5754" href="#P0"></use>
+    <use x="2275" y="-700" href="#P3"></use>
+    <use x="1722" y="55" href="#P2"></use>
+    <use x="2148" y="282" href="#P2"></use>
+    <use x="2025" y="1360" href="#P0"></use>
+    <use x="2296" y="1774" href="#P0"></use>
+    <use x="1946" y="3118" href="#P3"></use>
+    <use x="2339" y="3682" href="#P1"></use>
+    <use x="2143" y="4202" href="#P2"></use>
+    <use x="1802" y="5247" href="#P1"></use>
+    <use x="1965" y="5703" href="#P0"></use>
+    <use x="2716" y="-842" href="#P2"></use>
+    <use x="2943" y="-295" href="#P1"></use>
+    <use x="2664" y="845" href="#P2"></use>
+    <use x="2981" y="1136" href="#P2"></use>
+    <use x="2966" y="2013" href="#P0"></use>
+    <use x="3160" y="3026" href="#P1"></use>
+    <use x="3184" y="3861" href="#P2"></use>
+    <use x="2969" y="4396" href="#P2"></use>
+    <use x="2506" y="5355" href="#P1"></use>
+    <use x="2831" y="5576" href="#P1"></use>
+    <use x="3921" y="-430" href="#P3"></use>
+    <use x="3389" y="-253" href="#P3"></use>
+    <use x="3616" y="858" href="#P2"></use>
+    <use x="3927" y="1639" href="#P2"></use>
+    <use x="3929" y="2071" href="#P1"></use>
+    <use x="3206" y="2897" href="#P2"></use>
+    <use x="3350" y="3392" href="#P0"></use>
+    <use x="3246" y="4750" href="#P2"></use>
+    <use x="3625" y="5249" href="#P2"></use>
+    <use x="3265" y="5673" href="#P3"></use>
+    <use x="4116" y="-817" href="#P2"></use>
+    <use x="4500" y="247" href="#P2"></use>
+    <use x="4214" y="733" href="#P3"></use>
+    <use x="4495" y="1010" href="#P1"></use>
+    <use x="4581" y="1870" href="#P3"></use>
+    <use x="4477" y="2644" href="#P3"></use>
+    <use x="4423" y="3696" href="#P0"></use>
+    <use x="4722" y="4286" href="#P1"></use>
+    <use x="4518" y="5225" href="#P0"></use>
+    <use x="4275" y="5343" href="#P0"></use>
+    <use x="5041" y="-488" href="#P1"></use>
+    <use x="5219" y="4" href="#P1"></use>
+    <use x="5029" y="958" href="#P2"></use>
+    <use x="5070" y="1019" href="#P2"></use>
+    <use x="5055" y="2058" href="#P0"></use>
+    <use x="5235" y="3190" href="#P3"></use>
+    <use x="5332" y="3748" href="#P0"></use>
+    <use x="5139" y="4364" href="#P3"></use>
+    <use x="4729" y="5003" href="#P3"></use>
+    <use x="5203" y="5604" href="#P2"></use>
+    <use x="5655" y="-687" href="#P2"></use>
+    <use x="5634" y="-129" href="#P0"></use>
+    <use x="5820" y="639" href="#P0"></use>
+    <use x="6128" y="1575" href="#P3"></use>
+    <use x="5829" y="2033" href="#P3"></use>
+    <use x="6184" y="2874" href="#P1"></use>
+    <use x="6116" y="3796" href="#P3"></use>
+    <use x="6070" y="4391" href="#P2"></use>
+    <use x="5752" y="5089" href="#P1"></use>
+    <use x="5806" y="5329" href="#P0"></use>
+    <use x="5951" y="-488" href="#P1"></use>
+    <use x="6156" y="230" href="#P0"></use>
+    <use x="6555" y="1086" href="#P3"></use>
+    <use x="6380" y="1627" href="#P1"></use>
+    <use x="6548" y="1870" href="#P3"></use>
+    <use x="6368" y="2747" href="#P1"></use>
+    <use x="6325" y="3667" href="#P0"></use>
+    <use x="6342" y="4372" href="#P1"></use>
+    <use x="6259" y="4989" href="#P1"></use>
+    <use x="6365" y="5169" href="#P2"></use>
+    <use x="6556" y="-324" href="#P0"></use>
+    <use x="7107" y="513" href="#P2"></use>
+    <use x="6750" y="629" href="#P0"></use>
+    <use x="6922" y="1785" href="#P3"></use>
+    <use x="7151" y="2000" href="#P1"></use>
+    <use x="6961" y="2507" href="#P2"></use>
+    <use x="6743" y="3621" href="#P2"></use>
+    <use x="6751" y="4273" href="#P2"></use>
+    <use x="7091" y="4487" href="#P0"></use>
+    <use x="6742" y="5387" href="#P2"></use>
+  </g>
+</svg>

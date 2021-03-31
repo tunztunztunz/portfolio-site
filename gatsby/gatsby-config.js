@@ -5,10 +5,11 @@ dotenv.config({ path: '.env' });
 export default {
   siteMetadata: {
     title: `Dustin Simensen`,
-    siteUrl: 'https://www.dustinsimensen.com',
+    siteUrl: 'https://dustinsimensen.com',
     description: 'Portfolio site for Dustin Simensen.',
   },
   plugins: [
+    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {

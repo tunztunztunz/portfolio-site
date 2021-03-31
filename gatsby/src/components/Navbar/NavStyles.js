@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   text-transform: uppercase;
   z-index: 2;
   align-self: center;
-
+  background-color: var(--white);
   @media (max-width: 800px) {
     background: var(--white);
     top: 0;

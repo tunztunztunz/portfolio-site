@@ -81,6 +81,11 @@ export default {
       description: 'Link to the project live on the internet',
     },
     {
+      name: 'videoId',
+      title: 'Video ID',
+      type: 'string',
+    },
+    {
       name: 'technology',
       title: 'Technology',
       type: 'array',
@@ -94,6 +99,11 @@ export default {
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: 'gif',
+      title: 'Gif',
+      type: 'image',
     },
   ],
   preview: {
