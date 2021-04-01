@@ -5,7 +5,7 @@ dotenv.config({ path: '.env' });
 export default {
   siteMetadata: {
     title: `Dustin Simensen`,
-    siteUrl: 'https://dustinsimensen.com',
+    siteUrl: 'https://www.dustinsimensen.com',
     description: 'Portfolio site for Dustin Simensen.',
   },
   plugins: [
