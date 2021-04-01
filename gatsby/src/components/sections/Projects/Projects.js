@@ -45,7 +45,7 @@ const SingleProject = ({ project }) => {
   const notMobile = useMediaQuery({
     query: '(min-width: 768px)',
   });
-  console.log(tooltipOn);
+
   return (
     <>
       <SingleProjectStyles hovered={isHovered} tooltipOn={tooltipOn}>
@@ -128,14 +128,16 @@ const SingleProject = ({ project }) => {
                 <a href={project.githubLink} target="_blank" rel="noreferrer">
                   <Button>Github</Button>
                 </a>
-                <Button openVideo={openVideo}>
-                  <div style={{ position: 'relative' }}>
-                    Video
-                    <span className="tooltip">
-                      This project doesn't have a video yet.
-                    </span>
-                  </div>
-                </Button>
+                {project.videoId && (
+                  <Button openVideo={openVideo}>
+                    <div style={{ position: 'relative' }}>
+                      Video
+                      <span className="tooltip">
+                        This project doesn't have a video yet.
+                      </span>
+                    </div>
+                  </Button>
+                )}
               </>
             )}
             {!notMobile && (
@@ -150,14 +152,13 @@ const SingleProject = ({ project }) => {
                     <Code />
                   </StyledIcon>
                 </a>
-                <StyledIcon>
-                  <div style={{ position: 'relative' }}>
-                    <Video onClick={() => openVideo()} />
-                    <span className="tooltip">
-                      This project doesn't have a video yet.
-                    </span>
-                  </div>
-                </StyledIcon>
+                {project.videoId && (
+                  <StyledIcon>
+                    <div style={{ position: 'relative' }}>
+                      <Video onClick={() => openVideo()} />
+                    </div>
+                  </StyledIcon>
+                )}
               </>
             )}
           </div>
