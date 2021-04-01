@@ -3,7 +3,17 @@ import Img from 'gatsby-image';
 import { VscFoldDown as Down } from 'react-icons/vsc';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useSound from 'use-sound';
-import TextLoop from 'react-text-loop';
+import { AiFillHtml5 as HTML } from 'react-icons/ai';
+import { FaCss3Alt as CSS } from 'react-icons/fa';
+import {
+  SiJavascript as JS,
+  SiGraphql as Graphql,
+  SiGatsby as GATSBY,
+  SiStyledComponents as STYLED,
+} from 'react-icons/si';
+import { DiNodejs as Node, DiReact as REACT } from 'react-icons/di';
+import { BsTriangleFill as Next } from 'react-icons/bs';
+
 import AboutMeStyles from './AboutMeStyles';
 import lowPop from '../../../assets/sounds/lowPop.mp3';
 import highPop from '../../../assets/sounds/highPop.mp3';
@@ -29,6 +39,12 @@ const AboutMe = ({ person }) => {
     'GATSBY',
     'NEXT',
   ];
+  const iconAnimations = {
+    'data-sal': 'slide-left',
+    'data-sal-delay': '900',
+    'data-sal-duration': { duration },
+    'data-sal-easing': 'ease-out-back',
+  };
 
   return (
     <section id="about">
@@ -84,34 +100,56 @@ const AboutMe = ({ person }) => {
               >
                 bands
               </a>{' '}
-              and enjoy writing. The current stack of languages/technologies I’m
-              familiar with is:
+              and enjoy writing.
             </p>
-            <span className="loop">
-              <TextLoop
-                springConfig={{ stiffness: 180, damping: 8 }}
-                className="mark"
-              >
-                {technologies.map((technology, index) => (
-                  <span key={index}>{technology}</span>
-                ))}
-              </TextLoop>
-            </span>
           </div>
 
-          <AnchorLink href="#projects" offset="700">
-            <Down
+          <div className="icons">
+            <span className="icon">
+              <HTML {...iconAnimations} data-sal-delay="950" />
+            </span>
+            <span className="icon">
+              <CSS {...iconAnimations} data-sal-delay="900" />
+            </span>
+            <span className="icon">
+              <JS {...iconAnimations} data-sal-delay="850" />
+            </span>
+            <span className="icon">
+              <Node {...iconAnimations} data-sal-duration="800" />
+            </span>
+            <span className="icon">
+              <REACT {...iconAnimations} data-sal-delay="750" />
+            </span>
+            <span className="icon">
+              <Graphql {...iconAnimations} data-sal-delay="700" />
+            </span>
+            <span className="icon">
+              <STYLED {...iconAnimations} data-sal-delay="650" />
+            </span>
+            <span className="icon">
+              <GATSBY {...iconAnimations} data-sal-delay="600" />
+            </span>
+            <span className="icon">
+              <Next {...iconAnimations} data-sal-delay="550" />
+            </span>
+          </div>
+          <AnchorLink href="#projects" offset="800">
+            <div
               data-sal="zoom-in"
               data-sal-delay="1000"
               data-sal-duration={duration}
               data-sal-easing="ease-out-back"
-              onMouseDown={playActive}
-              onMouseUp={playOn}
-              onClick={() => {
-                setAnimate(true);
-                setHasNavigated(true);
-              }}
-            />
+            >
+              <Down
+                className="down-arrow"
+                onMouseDown={playActive}
+                onMouseUp={playOn}
+                onClick={() => {
+                  setAnimate(true);
+                  setHasNavigated(true);
+                }}
+              />
+            </div>
           </AnchorLink>
         </div>
       </AboutMeStyles>

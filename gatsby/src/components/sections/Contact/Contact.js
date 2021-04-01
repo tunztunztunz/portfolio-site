@@ -28,15 +28,15 @@ const Contact = () => (
           data-sal-duration={duration}
           data-sal-easing="ease-out"
         >
-          Want to get in <span className="mark">touch?</span> You can fill out
-          the form below,{' '}
+          Want to get in <span className="mark">touch</span>, give me feedback,
+          or send hate mail? You can fill out the form below,{' '}
           <a href="mailto:dustinsimensen@gmail.com" className="mark">
             send an e-mail
           </a>
           , or{' '}
           <a href="tel:971-506-8025" className="mark">
             call/text
-          </a>
+          </a>{' '}
           .
         </p>
       </div>
