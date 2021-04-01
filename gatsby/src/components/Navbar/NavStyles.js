@@ -45,7 +45,7 @@ export const Toggle = styled.div`
     display: flex;
   }
 `;
-export const Navbox = styled.div`
+export const Navbox = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

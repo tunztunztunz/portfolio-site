@@ -190,7 +190,11 @@ const Projects = ({ projects }) => {
         >
           Here are some{' '}
           <span>
-            <a href={githubLink} className="mark">
+            <a
+              href={githubLink}
+              className="mark"
+              aria-label="Link to my github"
+            >
               projects
             </a>
           </span>{' '}

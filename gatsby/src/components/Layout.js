@@ -20,7 +20,7 @@ const Layout = ({ children }) => (
     <ContentStyles>
       <Nav />
       <Typography />
-      <Container>{children}</Container>
+      <Container role="main">{children}</Container>
     </ContentStyles>
     <FooterStyles />
   </>

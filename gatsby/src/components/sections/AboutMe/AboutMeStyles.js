@@ -40,6 +40,9 @@ const AboutMeStyles = styled.div`
       color: var(--rose);
       font-size: 48px;
     }
+    @media screen and (max-width: 800px) {
+      text-align: left;
+    }
     @media screen and (max-width: 600px) {
       svg {
         margin: 1rem 2rem;

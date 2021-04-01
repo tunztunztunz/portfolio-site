@@ -10,6 +10,7 @@ import {
   SiGraphql as Graphql,
   SiGatsby as GATSBY,
   SiStyledComponents as STYLED,
+  SiTypescript as Typescript,
 } from 'react-icons/si';
 import { DiNodejs as Node, DiReact as REACT } from 'react-icons/di';
 import { BsTriangleFill as Next } from 'react-icons/bs';
@@ -28,17 +29,7 @@ const AboutMe = ({ person }) => {
   const uniPiper =
     'https://www.youtube.com/watch?v=cnVjkE87FDY&ab_channel=TheUnipiper';
   const duration = '1000';
-  const technologies = [
-    'HTML5',
-    'CSS3',
-    'JAVASCRIPT',
-    'NODE.JS',
-    'REACT',
-    'EXPRESS',
-    'GRAPHQL',
-    'GATSBY',
-    'NEXT',
-  ];
+
   const iconAnimations = {
     'data-sal': 'slide-left',
     'data-sal-delay': '900',
@@ -106,34 +97,82 @@ const AboutMe = ({ person }) => {
 
           <div className="icons">
             <span className="icon">
-              <HTML {...iconAnimations} data-sal-delay="950" />
+              <HTML
+                {...iconAnimations}
+                data-sal-delay="950"
+                aria-label="HTML5 Icon"
+              />
             </span>
             <span className="icon">
-              <CSS {...iconAnimations} data-sal-delay="900" />
+              <CSS
+                {...iconAnimations}
+                data-sal-delay="900"
+                aria-label="CSS3 Icon"
+              />
             </span>
             <span className="icon">
-              <JS {...iconAnimations} data-sal-delay="850" />
+              <JS
+                {...iconAnimations}
+                data-sal-delay="850"
+                aria-label="Javascript Icon"
+              />
             </span>
             <span className="icon">
-              <Node {...iconAnimations} data-sal-duration="800" />
+              <Node
+                {...iconAnimations}
+                data-sal-duration="800"
+                aria-label="Node.js Icon"
+              />
             </span>
             <span className="icon">
-              <REACT {...iconAnimations} data-sal-delay="750" />
+              <REACT
+                {...iconAnimations}
+                data-sal-delay="750"
+                aria-label="React Icon"
+              />
             </span>
             <span className="icon">
-              <Graphql {...iconAnimations} data-sal-delay="700" />
+              <Graphql
+                {...iconAnimations}
+                data-sal-delay="700"
+                aria-label="Graphql Icon"
+              />
             </span>
             <span className="icon">
-              <STYLED {...iconAnimations} data-sal-delay="650" />
+              <STYLED
+                {...iconAnimations}
+                data-sal-delay="650"
+                aria-label="Styled Components Icon"
+              />
             </span>
             <span className="icon">
-              <GATSBY {...iconAnimations} data-sal-delay="600" />
+              <GATSBY
+                {...iconAnimations}
+                data-sal-delay="600"
+                aria-label="Gatsby.js Icon"
+              />
             </span>
             <span className="icon">
-              <Next {...iconAnimations} data-sal-delay="550" />
+              <Next
+                {...iconAnimations}
+                data-sal-delay="550"
+                aria-label="Next.js Icon"
+              />
+            </span>
+            <span className="icon">
+              <Typescript
+                {...iconAnimations}
+                data-sal-delay="500"
+                aria-label="Typescript Icon"
+              />
             </span>
           </div>
-          <AnchorLink href="#projects" offset="800">
+          <AnchorLink
+            href="#projects"
+            offset="800"
+            aria-label="Navigate To Projects"
+            aria-hidden="false"
+          >
             <div
               data-sal="zoom-in"
               data-sal-delay="1000"
