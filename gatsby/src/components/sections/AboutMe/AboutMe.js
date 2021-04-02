@@ -13,7 +13,6 @@ import {
   SiTypescript as Typescript,
 } from 'react-icons/si';
 import { DiNodejs as Node, DiReact as REACT } from 'react-icons/di';
-import { BsTriangleFill as Next } from 'react-icons/bs';
 
 import AboutMeStyles from './AboutMeStyles';
 import lowPop from '../../../assets/sounds/lowPop.mp3';
@@ -60,7 +59,8 @@ const AboutMe = ({ person }) => {
             data-sal-easing="ease-out-back"
           >
             <p>
-              Howdy pardner 🤠 ! I’m a web developer based out of{' '}
+              Howdy pardner 🤠 ! I’m a web developer available for full-time
+              employment. I'm based out of{' '}
               <a
                 href={uniPiper}
                 target="_blank"
@@ -68,21 +68,12 @@ const AboutMe = ({ person }) => {
                 rel="noreferrer"
               >
                 Portland, Oregon
-              </a>
-              . I enjoy building things with{' '}
-              <a
-                href={githubLink}
-                target="_blank"
-                className="mark"
-                rel="noreferrer"
-              >
-                Javascript
-              </a>
-              . I mainly work with modern frameworks like React.js, Gatsby.js,
-              Next.js, Bootstrap, and Styled Components for front-end
-              development. For backend development, I’m familiar with
-              Express.js, Mongoose, Graphql, and Mongodb. When I’m not coding, I
-              sling guitar riffs in{' '}
+              </a>{' '}
+              and enjoy building things for the web. I mainly work with modern
+              frameworks like React.js, Gatsby.js, Bootstrap, and Styled
+              Components for front-end development. For backend development, I’m
+              familiar with Express.js, Mongoose, Graphql, and Mongodb. When I’m
+              not coding, I sling guitar riffs in{' '}
               <a
                 href={bandLink}
                 target="_blank"
@@ -150,13 +141,6 @@ const AboutMe = ({ person }) => {
                 {...iconAnimations}
                 data-sal-delay="600"
                 aria-label="Gatsby.js Icon"
-              />
-            </span>
-            <span className="icon">
-              <Next
-                {...iconAnimations}
-                data-sal-delay="550"
-                aria-label="Next.js Icon"
               />
             </span>
             <span className="icon">
