@@ -38,7 +38,7 @@ const Nav = () => {
           onMouseDown={playSparkle}
         >
           {' '}
-          {colorMode === 'light' ? '☀️' : '🌝'}
+          {colorMode && colorMode === 'light' ? '☀️' : '🌝'}
         </span>
         <Toggle
           navbarOpen={navbarOpen}
