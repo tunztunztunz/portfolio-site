@@ -69,7 +69,7 @@ export const SingleProjectStyles = styled.article`
     margin-top: 0.5rem;
     align-self: center;
     align-items: end;
-    color: var(--rose);
+    color: var(--color-primary);
     text-transform: uppercase;
     font-size: 0.8rem;
   }
@@ -86,37 +86,6 @@ export const SingleProjectStyles = styled.article`
   }
   .hovered:hover {
     opacity: 1;
-  }
-  .tooltip {
-    opacity: ${(props) => (props.tooltipOn ? 1 : 0)};
-    width: 120px;
-    background-color: var(--black);
-    color: var(--white);
-    text-align: center;
-    border-radius: 4px;
-    padding: 10px 5px;
-    position: absolute;
-    z-index: 2;
-    bottom: 175%;
-    left: 50%;
-    margin-left: -60px;
-    transition: opacity 1s;
-    @media screen and (max-width: 750px) {
-      padding: 5px;
-      font-size: 16px;
-      width: 150px;
-      bottom: 125%;
-    }
-  }
-  .tooltip::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: var(--black) transparent transparent transparent;
   }
   .gatsby-image-wrapper {
     margin-top: 0.3rem;

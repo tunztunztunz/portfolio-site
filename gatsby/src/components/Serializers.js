@@ -17,25 +17,10 @@ export const Serializer = {
       const { blank, href } = mark;
       return blank ? (
         <a href={href} target="_blank" rel="noreferrer">
-          <span
-            style={{
-              textDecoration: 'underline !important',
-              color: '#A05C7B',
-            }}
-          >
-            {children}
-          </span>
+          <span>{children}</span>
         </a>
       ) : (
-        <a
-          href={href}
-          style={{
-            textDecoration: 'underline !important',
-            color: '#A05C7B',
-          }}
-        >
-          {children}
-        </a>
+        <a href={href}>{children}</a>
       );
     },
   },

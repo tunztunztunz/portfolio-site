@@ -13,12 +13,11 @@ const FormStyles = styled.form`
   textarea {
     display: block;
     width: 100%;
-    //height: 3rem;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid var(--black);
+    border: 1px solid var(--color-text);
     font-size: 1.25rem;
   }
   .form-header {
@@ -27,10 +26,6 @@ const FormStyles = styled.form`
     flex-direction: column;
     align-items: center;
     margin-bottom: 1rem;
-    h3 {
-      font-weight: 600;
-      color: var(--rose);
-    }
   }
   .buttons {
     display: flex;

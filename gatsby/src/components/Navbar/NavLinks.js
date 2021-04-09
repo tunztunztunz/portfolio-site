@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import useSound from 'use-sound';
+import lowPop from '../../assets/sounds/lowPop.mp3';
+import highPop from '../../assets/sounds/highPop.mp3';
 
 const Wrapper = styled.div`
   display: inline-block;
-  //margin: 0 1vw;
   align-items: center;
   @media (max-width: 800px) {
     flex-direction: column;
@@ -12,7 +14,6 @@ const Wrapper = styled.div`
   a {
     font-size: 1.25rem;
     text-decoration: none;
-    color: var(--black);
     margin-right: 1rem;
     white-space: nowrap;
     transition: all 200ms ease-in;
@@ -45,7 +46,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const Nav = ({ navbarOpen, setNavbarOpen }) => {
+const Nav = ({ navbarOpen, setNavbarOpen, playOn, playActive }) => {
   const toggleNav = () => {
     if (navbarOpen) {
       setNavbarOpen(!navbarOpen);
@@ -53,13 +54,40 @@ const Nav = ({ navbarOpen, setNavbarOpen }) => {
   };
   return (
     <Wrapper>
-      <AnchorLink href="#about" offset="0" onClick={() => toggleNav()}>
+      <AnchorLink
+        href="#about"
+        offset="0"
+        onClick={() => toggleNav()}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') playActive();
+        }}
+        onMouseDown={playActive}
+        onMouseUp={playOn}
+      >
         About
       </AnchorLink>
-      <AnchorLink href="#projects" offset="25" onClick={() => toggleNav()}>
+      <AnchorLink
+        href="#projects"
+        offset="25"
+        onClick={() => toggleNav()}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') playActive();
+        }}
+        onMouseDown={playActive}
+        onMouseUp={playOn}
+      >
         Projects
       </AnchorLink>
-      <AnchorLink href="#contact" offset="25" onClick={() => toggleNav()}>
+      <AnchorLink
+        href="#contact"
+        offset="25"
+        onClick={() => toggleNav()}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') playActive();
+        }}
+        onMouseDown={playActive}
+        onMouseUp={playOn}
+      >
         Contact
       </AnchorLink>
     </Wrapper>

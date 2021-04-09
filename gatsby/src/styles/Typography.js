@@ -10,10 +10,11 @@ const Typography = createGlobalStyle`
   }
   html {
     font-family: openSans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--black);
-  }
-  p {
-    transition: all 200ms ease-in-out;
+    color: var(--color-text);
+    svg {
+      color: var(--color-text);
+    } ;
+      
   }
   p, li {
     letter-spacing: 0.5px;
@@ -23,11 +24,11 @@ const Typography = createGlobalStyle`
     margin: 0;
   }
   a {
-    color: var(--black);
-    text-decoration-color: var(--rose);
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
   }
   .mark {
-    color: var(--rose);
+    color: var(--color-primary);
   }
   .center {
     text-align: center;

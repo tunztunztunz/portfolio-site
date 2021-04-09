@@ -9,23 +9,38 @@ export const Wrapper = styled.div`
   text-transform: uppercase;
   z-index: 2;
   align-self: center;
-  background-color: var(--white);
+  a {
+    color: var(--color-text);
+    :hover {
+      color: var(--color-primary);
+    }
+  }
+  .dark-mode-switch {
+    font-size: 24px;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+  .nav-selection {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
   @media (max-width: 800px) {
-    background: var(--white);
+    background-color: var(--color-background);
     top: 0;
     left: 0;
     right: 0;
     left: 0;
-    padding: 0 3rem;
+    padding: 0 1rem;
   }
 `;
 
 export const Name = styled.a`
   font-size: 1.5rem;
   letter-spacing: 0.15rem;
-  color: var(--black);
+  color: var(--color-text);
   &:hover {
-    color: var(--rose);
+    color: var(--color-primary);
     cursor: pointer;
   }
   text-decoration: none;
@@ -40,7 +55,7 @@ export const Toggle = styled.div`
   display: none;
   height: 100%;
   cursor: pointer;
-
+  margin-top: 0.75rem;
   @media (max-width: 800px) {
     display: flex;
   }
@@ -59,16 +74,16 @@ export const Navbox = styled.nav`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    //padding-left: 5rem;
-    background-color: var(--white);
-    transition: all 0.3s ease-in;
-    top: 8vh;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    transition: right 0.25s ease-in;
+    top: 10vh;
     right: ${(props) => (props.open ? '-100%' : '0')};
   }
 `;
 export const Hamburger = styled.div`
   display: none;
-  background-color: var(--black);
+  background-color: var(--color-text);
   width: 30px;
   height: 3px;
   transition: all 0.3s linear;
@@ -83,7 +98,7 @@ export const Hamburger = styled.div`
   ::after {
     width: 30px;
     height: 3px;
-    background-color: var(--black);
+    background-color: var(--color-text);
     content: '';
     position: absolute;
     transition: all 0.3s linear;

@@ -6,7 +6,6 @@ const AboutMeStyles = styled.div`
   align-items: center;
   text-align: left;
   margin-top: 3rem;
-  transition: all 3s ease-out;
   ul {
     text-align: left;
     @media screen and (min-width: 800px) {
@@ -34,10 +33,12 @@ const AboutMeStyles = styled.div`
       margin: 1rem 1rem;
     }
     .icon {
-      transition: all 0.25s;
+      transition: all 0.25s linear;
     }
     .icon:hover {
-      color: var(--rose);
+      svg {
+        color: var(--color-primary);
+      }
       font-size: 48px;
     }
     @media screen and (max-width: 800px) {
@@ -80,7 +81,7 @@ const AboutMeStyles = styled.div`
     position: relative;
     height: ${(props) => (props.hasNavigated ? '500px' : '100vh')};
     padding: ${(props) => (props.hasNavigated ? '15px' : '0 15px')};
-    transition: all 0.75s ease-in-out;
+    transition: height 0.75s ease-in-out;
     /* The SVG button */
     .down-arrow {
       display: block;

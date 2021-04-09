@@ -1,7 +1,5 @@
 // import React from 'react';
-// import Layout from './src/components/Layout';
-// import GlobalStyles from './src/styles/GlobalStyles';
-// import Nav from './src/components/Navbar/Nav';
+// import { ThemeProvider } from 'styled-components';
 
 // export const wrapPageElement = ({ element, props }) => (
 //   <>

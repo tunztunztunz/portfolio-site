@@ -30,16 +30,10 @@ const SingleProject = ({ project }) => {
   const [currentImage, setCurrentImage] = useState(project.image.asset.fluid);
   const [isHovered, setIsHovered] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [tooltipOn, setTooltipOn] = useState(false);
 
   const openVideo = () => {
     if (project.videoId !== null) {
       setIsOpen(true);
-    } else {
-      setTooltipOn(true);
-      setTimeout(() => {
-        setTooltipOn(false);
-      }, 3000);
     }
   };
   const notMobile = useMediaQuery({
@@ -48,8 +42,7 @@ const SingleProject = ({ project }) => {
 
   return (
     <>
-      <SingleProjectStyles hovered={isHovered} tooltipOn={tooltipOn}>
-        {console.log(project.videoId)}
+      <SingleProjectStyles hovered={isHovered}>
         <ModalVideo
           channel="vimeo"
           autoplay
@@ -130,12 +123,7 @@ const SingleProject = ({ project }) => {
                 </a>
                 {project.videoId && (
                   <Button openVideo={openVideo}>
-                    <div style={{ position: 'relative' }}>
-                      Video
-                      <span className="tooltip">
-                        This project doesn't have a video yet.
-                      </span>
-                    </div>
+                    <div style={{ position: 'relative' }}>Video</div>
                   </Button>
                 )}
               </>
@@ -189,16 +177,10 @@ const Projects = ({ projects }) => {
           data-sal-easing="ease-in"
         >
           Here are some{' '}
-          <span>
-            <a
-              href={githubLink}
-              className="mark"
-              aria-label="Link to my github"
-            >
-              projects
-            </a>
-          </span>{' '}
-          I've worked on
+          <a href={githubLink} aria-label="Link to my github">
+            projects
+          </a>{' '}
+          I've worked on.
         </p>
       </HeaderStyles>
       <ProjectsGrid>

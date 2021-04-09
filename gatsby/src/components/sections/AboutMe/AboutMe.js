@@ -51,13 +51,13 @@ const AboutMe = ({ person }) => {
             className="image"
           />
         </div>
-        <div>
-          <div
-            data-sal="slide-right"
-            data-sal-delay="500"
-            data-sal-duration={duration}
-            data-sal-easing="ease-out-back"
-          >
+        <div
+          data-sal="slide-right"
+          data-sal-delay="500"
+          data-sal-duration={duration}
+          data-sal-easing="ease-out-back"
+        >
+          <div>
             <p>
               Howdy pardner 🤠 ! I’m a web developer available for full-time
               employment. I'm based out of{' '}
@@ -156,6 +156,14 @@ const AboutMe = ({ person }) => {
             offset="800"
             aria-label="Navigate To Projects"
             aria-hidden="false"
+            // For accessibility, I think.
+            onKeyDown={(event) => {
+              if (event.key === 'Enter') {
+                playActive();
+                setAnimate(true);
+                setHasNavigated(true);
+              }
+            }}
           >
             <div
               data-sal="zoom-in"
