@@ -8,24 +8,7 @@ export const COLORS = {
     dark: 'hsl(250deg, 70%, 7%)', // navy navy blue
   },
   primary: {
-    light: 'hsl(333deg, 27%, 49%)', // Pinkish-red
+    light: 'hsl(333deg, 27%, 49%)', // Rose
     dark: 'hsl(50deg, 100%, 50%)', // Yellow
-  },
-  secondary: {
-    light: 'hsl(229deg, 56%, 45%%)', // Purplish-blue
-    dark: 'hsl(190deg, 100%, 40%)', // Cyan
-  },
-  // Grays, scaling from least-noticeable to most-noticeable
-  gray300: {
-    light: 'hsl(0deg, 0%, 70%)',
-    dark: 'hsl(0deg, 0%, 30%)',
-  },
-  gray500: {
-    light: 'hsl(0deg, 0%, 50%)',
-    dark: 'hsl(0deg, 0%, 50%)',
-  },
-  gray700: {
-    light: 'hsl(0deg, 0%, 30%)',
-    dark: 'hsl(0deg, 0%, 70%)',
   },
 };

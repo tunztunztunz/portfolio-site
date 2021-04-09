@@ -35,10 +35,6 @@ export const Theme = ({ children }) => {
       '--color-primary',
       newValue === 'light' ? COLORS.primary.light : COLORS.primary.dark
     );
-    root.style.setProperty(
-      '--color-secondary',
-      newValue === 'light' ? COLORS.secondary.light : COLORS.secondary.dark
-    );
   };
 
   return (
