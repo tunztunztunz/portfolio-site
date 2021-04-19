@@ -115,9 +115,11 @@ const SingleProject = ({ project }) => {
             {/* mobile buttons */}
             {notMobile && (
               <>
-                <a href={project.liveLink} target="_blank" rel="noreferrer">
-                  <Button>Live</Button>
-                </a>
+                {project.liveLink && (
+                  <a href={project.liveLink} target="_blank" rel="noreferrer">
+                    <Button>Live</Button>
+                  </a>
+                )}
                 <a href={project.githubLink} target="_blank" rel="noreferrer">
                   <Button>Github</Button>
                 </a>
@@ -130,11 +132,13 @@ const SingleProject = ({ project }) => {
             )}
             {!notMobile && (
               <>
-                <a href={project.liveLink} target="_blank" rel="noreferrer">
-                  <StyledIcon>
-                    <Link />
-                  </StyledIcon>
-                </a>
+                {project.liveLink && (
+                  <a href={project.liveLink} target="_blank" rel="noreferrer">
+                    <StyledIcon>
+                      <Link />
+                    </StyledIcon>
+                  </a>
+                )}
                 <a href={project.githubLink} target="_blank" rel="noreferrer">
                   <StyledIcon>
                     <Code />
